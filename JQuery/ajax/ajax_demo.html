@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <script>
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/3",
+            type: "GET",
+            success: function (response) {
+                $("#output").text(JSON.stringify(response));
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(textStatus, errorThrown)
+            }
+        });
+    </script>
+</body>
+
+</html>

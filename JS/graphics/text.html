@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphic Text</title>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "30px Helvetica";
+            ctx.strokeText("Hello, World!", 10, 50);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+class BankAccount {
+    //private modifier
+    #balance = 1500;
+
+    getBalance() {
+        return this.#balance;
+    }
+
+    setBalance(balance) {
+        this.#balance = balance;
+    }
+}
+
+const acc = new BankAccount();
+console.log(acc.getBalance());
+acc.setBalance(2000);
+console.log(acc.getBalance());

@@ -1,0 +1,26 @@
+<!--We can change html content with JS using DOM-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model by tag</title>
+</head>
+
+<body>
+    <h1>JS DOM -> getElementByTagName</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+    </ul>
+
+    <script>
+        const liData = document.getElementsByTagName("li");
+        for (let i = 0; i < liData.length; i++)
+        { document.write(liData[i].textContent + "<br>");
+    }
+    </script>
+</body>
+
+</html>

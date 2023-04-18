@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>While loop</title>
+</head>
+
+<body>
+    <script>
+        let numberOfProducts = Number(prompt("Number of products: "));
+        let i = 0;
+        while (i < numberOfProducts) {
+            let productName = prompt("Product name: ");
+            let productId = Number(prompt("Product id: "));
+            let quantity = Number(prompt("Quantity: "));
+            let productPrice = Number(prompt("Enter the price: "))
+
+            let totalPrice = quantity * productPrice;
+
+            document.write("    PRODUCT BILL    <br>");
+            document.write("Product id: " + productId + "<br>");
+            document.write("Product name: " + productName + "<br>");
+            document.write("Product price: " + productPrice + "<br>");
+            document.write("Total price: " + totalPrice + "<br><br>");
+
+            i++;
+        }
+    </script>
+</body>
+
+</html>

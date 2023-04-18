@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+        </script>
+        <style>
+            .important {
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            .red {
+                color: rgb(168, 29, 29);
+            }
+        </style>
+
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("h1, h2, p").removeClass("red");
+                    $("div").removeClass("important");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1 class="red">Heading1</h1>
+        <h1 class="red">Heading2</h1>
+
+        <p class="red">This is a paragraph</p>
+        <p class="red">This is another paragraph</p>
+
+        <div class="important">Div element with very important text</div><br>
+
+        <button>Remove CSS classes</button>
+    </body>
+</html>

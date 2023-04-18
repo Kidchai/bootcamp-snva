@@ -1,0 +1,26 @@
+/* * {
+    overflow: hidden;
+    opacity: 1.0;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+} */
+
+/* * {
+    font-family:;
+} */
+
+.logo {
+    margin: 15px;
+}
+
+a:hover {
+    color: rgb(217, 113, 22);
+}

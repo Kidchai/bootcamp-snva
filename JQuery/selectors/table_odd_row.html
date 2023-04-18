@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table odd row</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("tr:odd").css("background-color", "#FBEFFB");
+                $("tr:even").css("background-color", "#EFFBFB");
+            })
+        </script>
+    </head>
+    <body>
+        <table>
+            <div class="container-fluid">
+                <h1>Table with different colors for odd and even rows</h1>
+                <table class="table table-bordered">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1011</td>
+                            <td>Rosy Smith</td>
+                            <td>PR</td>
+                        </tr>
+                        <tr>
+                            <td>1012</td>
+                            <td>Ron Garcia</td>
+                            <td>Development</td>
+                        </tr>
+                        <tr>
+                            <td>1013</td>
+                            <td>Anna Kells</td>
+                            <td>Testing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </table>
+    </body>
+</html>

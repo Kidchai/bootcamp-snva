@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#prev").click(function(){
+                    $("img").before("<b> Previous </b>");
+                })
+                $("#btn2").click(function(){
+                    $("img").after("<b> Next </b>");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <img src="https://preview.redd.it/j5n2ttpyf8v01.jpg?width=640&crop=smart&auto=webp&s=3b45aee7a17d3c8fc3097c717ce73ac538ac5090" 
+        alt="jquery">
+
+        <button id="prev">Previoust</button>
+        <button id="btn2">Next</button>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element class selector</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color", "#EFFBFB");
+                })
+                $("input").blur(function(){
+                    $(this).css("background-color", "#F5FBEF");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        Name: <input type="text" name="fullname"><br><br>
+        Email: <input type="text" name="email">
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let numberOfEmployees = Number(prompt('Enter the number of employees'));
+            let i = 1;
+            do {
+                var name = prompt("Employee name: ");
+                var id = Number(prompt("Employee id: "));
+                var basicSalary = Number(prompt("Basic Salary: "));
+
+                var hra = basicSalary * 30 / 100;
+                var da = basicSalary * 19 / 100;
+                var pf = basicSalary * 12 / 100;
+                var esi = basicSalary * 20 / 100;
+
+                var totalEarnings = basicSalary + hra + da;
+                var totalDeduction = pf + esi;
+                var netPay = totalEarnings - totalDeduction;
+
+                document.write("============================<br>");
+                document.write(" PaySlip :" + i + "<br>");
+                document.write("============================<br>");
+                document.write("Employee Name: " + name + "<br>");
+                document.write("Employee Id: " + id + "<br>");
+                document.write("Baisc Salary: " + basicSalary + "<br>");
+                document.write("Total Earnings: " + totalEarnings + "<br>");
+                document.write("Total Deductions: " + totalDeduction + "<br>");
+                document.write("Gross Pay: " + netPay + "<br>");
+                i++;
+            } while (i <= numberOfEmployees)
+        </script>
+    </body>
+</html>

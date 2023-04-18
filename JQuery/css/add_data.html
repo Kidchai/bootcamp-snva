@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+        </script>
+        <style>
+            .important {
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            .red {
+                color: rgb(168, 29, 29);
+            }
+        </style>
+
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").css({
+                        "background-color":"pink",
+                        "font-size":"200%"
+                    });
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Heading</h1>
+
+        <p style="background-color: antiquewhite;" >This is a paragraph</p>
+        <p style="background-color: beige;">This is another paragraph</p>
+        <p style="background-color: blanchedalmond;">This is another paragraph</p>
+        <p>This is another paragraph</p>
+
+        <button>Change style of paragraphs</button>
+    </body>
+</html>

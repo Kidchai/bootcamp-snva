@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fade toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p>Demo for the fade out affect with differen parametrs</p>
+    <button id="show">Fade</button>
+    <h3>Default</h3>
+    <div id="div1" style="width: 80px;
+        height: 80px;
+        background-color: red">
+    </div><br>
+    <h3>Slow</h3>
+    <div id="div2" style="width: 80px;
+        height: 80px;
+        background-color: red">
+    </div><br>
+    <h3>With setting time</h3>
+    <div id="div3" style="width: 80px;
+        height: 80px;
+        background-color: red">
+    </div><br>
+</body>
+
+</html>

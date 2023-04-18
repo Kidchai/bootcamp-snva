@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slide up</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#bigButton").click(function () {
+                $("div").animate({
+                    left: '250px',
+                    height: '+=250px',
+                    width: '+=250px'
+                })
+            })
+            $("#smallButton").click(function () {
+                $("div").animate({
+                    left: '250px',
+                    height: '-=250px',
+                    width: '-=250px'
+                })
+            })
+            $("#animation1").click(function () {
+                $("div").animate({
+                    height: "toggle"
+                })
+            })
+            $("#animation2").click(function () {
+                let div = $("div");
+                div.animate({ height: "300px", opacity: "0.4" }, "slow")
+                div.animate({ width: "300px", opacity: "0.8" }, "slow")
+                div.animate({ height: "100px", opacity: "0.4" }, "slow")
+                div.animate({ width: "100px", opacity: "0.8" }, "slow")
+            })
+            $("#animation3").click(function () {
+                let div = $("div");
+                div.animate({ left: "100px" }, "slow")
+                div.animate({ fontSize: "3em" }, "slow")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div style="background-color: aliceblue;
+    color: brown;
+    height: 100px;
+    width: 100px;
+    position: absolute;">
+    Hello </div><br><br><br><br><br><br>
+
+    <button id="bigButton">Make it bigger</button><br><br>
+    <button id="smallButton">Make it smaler</button><br><br>
+    <button id="animation1">Animation 1</button><br><br>
+    <button id="animation2">Animation 2</button><br><br>
+    <button id="animation3">Animation 3</button><br><br>
+    <div style="background-color: #01DF74;
+    height: 100px;
+    width: 100px;
+    position: absolute;"></div>
+</body>
+
+</html>

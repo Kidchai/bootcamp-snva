@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class selector</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".test").hide();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>This is a heading1</h1>
+        <p>This is a paragraph</p>
+        <p class="test">This is a paragraph with class 'test'</p>
+        <p>This is another paragraph</p>
+        <button>Click here to hide the paragraph with class 'test'</button>
+    </body>
+</html>

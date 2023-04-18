@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+        </script>
+        <style>
+            .important {
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            .red {
+                color: rgb(168, 29, 29);
+            }
+        </style>
+
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("h1, h2, p").addClass("red");
+                    $("div").addClass("important");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Heading1</h1>
+        <h1>Heading2</h1>
+
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+
+        <div>Div element with very important text</div><br>
+
+        <button>Magic!</button>
+    </body>
+</html>

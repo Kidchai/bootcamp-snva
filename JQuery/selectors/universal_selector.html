@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Universal selector</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("*").hide();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1>This is a heading1</h1>
+        <p>This is a paragraph</p>
+        <p>This is a second paragraph</p>
+        <p>This is another paragraph</p>
+        <button>Click here to hide all!</button>
+    </body>
+</html>

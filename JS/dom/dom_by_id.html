@@ -1,0 +1,23 @@
+<!--We can change html content with JS using DOM-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model by id</title>
+</head>
+
+<body>
+    <h1>JS DOM -> getElementById</h1>
+    <p id="p1">This is old paragraph</p>
+    <p id="p2">This is another paragraph</p>
+    <button type="button" onclick="change()">Click to change content</button>
+
+    <script>
+        function change() {
+            document.getElementById("p1")
+                .innerHTML = "This is new paragraph!!!";
+        }
+    </script>
+</body>
+
+</html>

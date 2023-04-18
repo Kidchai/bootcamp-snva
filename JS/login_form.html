@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <h2>Login Form</h2>
+        <form name="loginForm" onsubmit="return validateForm()" method="post">
+            Username: <input type="text" id="userName" name="userName">
+            Password: <input type="text" id="password" name="password">
+            <input type="submit" value="submit">
+        </form>
+
+
+
+        <script>
+            function validateForm() {
+                let userName = document.forms["loginForm"]["userName"].value;
+                let password = document.forms["loginForm"]["password"].value;
+
+                if (userName == "" || password == "") {
+                    alert("Please, enter your username and password.")
+                } else if (userName === "admin" && password === admin) {
+                    document.write("Welcome!");
+                } else {
+                    document.write("Sorry, the username or password is wrong. Please, try again.")
+                }
+            }
+        </script>
+    </body>
+</html>

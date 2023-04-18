@@ -1,0 +1,23 @@
+<!--We can change the style using DOM-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model by id</title>
+</head>
+
+<body>
+    <h1>JS DOM -> getElementById</h1>
+    <p id="p1">Hello, World!</p>
+    <p id="p2">Hello, World!</p>
+    <button type="button" onclick="document.getElementById('p2')
+    .style.color='red'">Click</button>
+
+    <script>
+        document.getElementById("p1").style.color="red";
+        document.getElementById("p1").style.backgroundColor="pink";
+        document.getElementById("p1").style.fontSize="35px";
+    </script>
+</body>
+
+</html>
