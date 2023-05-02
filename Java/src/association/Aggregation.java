@@ -1,5 +1,13 @@
-package inheritance;
+package association;
 
+/*
+With an aggregation, the child can exist independently of the parent.
+The child can be created and destroyed without affecting the parent.
+The child can be shared with other parents.
+The child can only have one parent at a time.
+
+In the example below, the Customer (parent) class has an Address (child) object.
+ */
 public class Aggregation {
     public static void main(String[] args) {
         Address address = new Address("Oak Park", "Illinois", "USA");

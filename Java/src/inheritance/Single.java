@@ -1,7 +1,7 @@
 package inheritance;
 
 //Only one parent and only one child
-public class SingleInheritance {
+public class Single {
 
     public static void main(String[] args) {
         ChildClass childClass = new ChildClass();

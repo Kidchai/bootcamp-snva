@@ -1,7 +1,7 @@
 package inheritance;
 
 //The child class is created from another child class.
-public class MultiLevelInheritance {
+public class MultiLevel {
     public static void main(String[] args) {
         Child child = new Child();
         child.printGrandParent();
