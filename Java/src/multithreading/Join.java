@@ -1,4 +1,4 @@
-package multithreading.synchronization;
+package multithreading;
 
 /*
 When we invoke the join() method on a thread, the calling thread goes into a waiting state.
@@ -12,7 +12,7 @@ public class Join {
         try {
             thread1.join(); // wait for thread1 to terminate
         }
-        catch (Exception e) {
+        catch (InterruptedException e) {
             System.out.println("Exception is caught");
         }
         thread2.start();
