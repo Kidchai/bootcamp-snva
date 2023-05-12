@@ -3,6 +3,7 @@ package collections.map;
 import java.util.HashMap;
 import java.util.Map;
 
+//doesn't provide any guarantee over the way the elements are arranged in the Map
 //no duplicate keys
 //null key and null values are allowed
 public class HashMapClass {
@@ -14,6 +15,7 @@ public class HashMapClass {
         map.put(3, "Three");
         map.put(7, "Seven");
         map.put(2, "Two");
+        map.put(20, "Twenty");
         map.put(7, "Seven2");
         map.put(null, "Null");
 
