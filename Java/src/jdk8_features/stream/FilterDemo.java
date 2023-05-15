@@ -3,7 +3,7 @@ package jdk8_features.stream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FilterClass {
+public class FilterDemo {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();
 
